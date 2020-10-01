@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes",
-  "description": "Multi node Kubernetes cluster configured using Kubeadm",
+  "title": "Minikube",
+  "description": "Use Minikube to help explain Kubernetes",
   "details": {
     "steps": [
       {
@@ -14,9 +14,9 @@
   },
   "environment": {
     "hideintro": true,
-    "uilayout": "terminal-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "kubernetes-cluster-running:1.18"
+    "imageid": "minikube"
   }
 }

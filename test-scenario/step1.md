@@ -1,3 +1,3 @@
-This environment has a `launch.sh`{{execute}}
+The Minikube environment is designed for teaching users how to deploy Kubernetes using the Minikube project.
 
-You can get with `kubectl get nodes`{{execute}}
+The cluster can be started with the command `minikube start`{{execute}}.
