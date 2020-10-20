@@ -37,4 +37,5 @@ Run the below command
 
 
 `kubectl get namespace
+`{{execute}}
 ---
