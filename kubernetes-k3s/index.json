@@ -8,18 +8,15 @@
             {
                 "title": "Kubernetes Deployment",
                 "text": "step1.md",
-                "verify": "step1-verify.sh",
                 "code": "foreground.sh"
             },
             {
                 "title": "Kubernetes Rollout Update",
-                "text": "step2.md",
-                "verify": "step2-verify.sh"
+                "text": "step2.md"
             },
             {
                 "title": "Quiz",
-                "text": "step3.md",
-                "answer": "step3-answers.md"
+                "text": "step3.md"
             },
             {
                 "title": "Quiz",
