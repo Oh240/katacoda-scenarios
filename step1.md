@@ -1,4 +1,4 @@
-## Kubernetes Deploymenn
+## Kubernetes Deployment
  Deployment
 
 ---
