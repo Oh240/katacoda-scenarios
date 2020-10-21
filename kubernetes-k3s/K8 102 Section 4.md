@@ -11,14 +11,7 @@
 
 ---
 
-```kubectl get namespace
-```{{execute}}
-
-
-***The above command will list the current namespaces in a cluster
-
-
-
+```
 Before we can apply the YAML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case kind-kind is the correct cluster . Run the below command to find that out.
 
 
