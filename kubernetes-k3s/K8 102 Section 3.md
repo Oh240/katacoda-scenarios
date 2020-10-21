@@ -1,4 +1,4 @@
-## Kubernetes Deployment
+## Creating the YAML File
  Deployment
 
 ---
