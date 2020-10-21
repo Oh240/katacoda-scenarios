@@ -33,9 +33,11 @@ kubectl create ns sandbox
 
 ---
 
-Run the below command
+
+```kubectl get namespace
+```{{execute}}
 
 
-`kubectl get namespace
-`{{execute}}
+***The above command will list the current namespaces in a cluster
+
 ---
