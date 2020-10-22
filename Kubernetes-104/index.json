@@ -6,41 +6,12 @@
     "details": {
         "steps": [
             {
-                "title": "Creating the YAML File",
-                "text": "K8 102 Section 3.md",
-                "code": "foreground.sh"
-            },
-            {
-                "title": "Applying the YAML File",
-                "text": "K8 102 Section 4.md"
-            },
-            {
-                "title": "Kubernetes Services",
-                "text": "K8 103 Section 1.md"
-            },
-            {
-                "title": "Accessing a Service",
-                "text": "K8 103 Section 2.md"
-            },
-            {
                 "title": "Creating and Referencing a ConfigMap",
                 "text": "K8 104 Section 2.md"
             },
             {
                 "title": "Editing a ConfigMap",
                 "text": "K8 104 Section 3.md"
-            },
-            {
-                "title": "Creating Secrets",
-                "text": "K8 105 Section 2.md"
-            },
-            {
-                "title": "Referencing Secrets",
-                "text": "K8 105 Section 3.md"
-            },
-            {
-                "title": "Test Logging in to Tomcat Manager UI",
-                "text": "K8 105 Section 4.md"
             }
         ],
         "assets": {
