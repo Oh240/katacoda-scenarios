@@ -1,4 +1,4 @@
-## Applying the YAML File
+## Applying the YML File
  Deployment
 
 ---
@@ -12,7 +12,7 @@
 ---
 
 ```
-Before we can apply the YAML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case kind-kind is the correct cluster . Run the below command to find that out.
+Before we can apply the YML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case kind-kind is the correct cluster . Run the below command to find that out.
 
 
 Run the below command
@@ -20,11 +20,11 @@ Run the below command
 `kubectl config current-context
 `{{execute}}
 kind-kind
-After confirming that we are pointed to the right Kubernetes cluster, we can now apply the YAML file to that cluster.
+After confirming that we are pointed to the right Kubernetes cluster, we can now apply the YML file to that cluster.
 
 ---
 
-`kubectl apply -f deployment.yaml
+`kubectl apply -f deployment.yml
 `{{execute}}
 deployment.extensions/a123456-deployment created
 To check that the deployment is there, run the below command to list all the deployments within your Kubernetes cluster and check for the existence of what you changed a123456 to. You should see something similar to what is shown below.
