@@ -46,7 +46,7 @@
         "assets": {
             "host01": [
                 {"file": "*.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "*.yaml", "target": "/root", "chmod": "+r"}
+                {"file": "*.yml", "target": "/root", "chmod": "+r"}
             ]
         },
         "intro": {
