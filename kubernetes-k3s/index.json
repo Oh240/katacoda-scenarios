@@ -24,11 +24,11 @@
             },
             {
                 "title": "Creating and Referencing a ConfigMap",
-                "text": "K8 104 Section 1.md"
+                "text": "K8 104 Section 2.md"
             },
             {
                 "title": "Editing a ConfigMap",
-                "text": "K8 104 Section 2.md"
+                "text": "K8 104 Section 3.md"
             },
             {
                 "title": "Creating Secrets",
