@@ -2,7 +2,7 @@
     "noindex": true,
     "title": "Kubernetes Playground using k3s",
     "description": "Kubernetes Playground using k3s",
-    "time": "10-20 minutes",
+    "time": "20-30 minutes",
     "details": {
         "steps": [
             {
@@ -24,11 +24,11 @@
             },
             {
                 "title": "Creating and Referencing a ConfigMap",
-                "text": "K8 104 Section 2.md"
+                "text": "K8 104 Section 1.md"
             },
             {
                 "title": "Editing a ConfigMap",
-                "text": "K8 104 Section 3.md"
+                "text": "K8 104 Section 2.md"
             },
             {
                 "title": "Creating Secrets",
@@ -41,7 +41,7 @@
             {
                 "title": "Test Logging in to Tomcat Manager UI",
                 "text": "K8 105 Section 4.md"
-            }  
+            }
         ],
         "assets": {
             "host01": [
