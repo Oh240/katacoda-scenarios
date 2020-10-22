@@ -12,7 +12,7 @@
 ---
 
 ```Insert the Secrets as environment variables into the Pod in the Tomcat Deployment and save it as deploy3.yaml or deploy3.yml:
-deploy3.yaml
+deploy3.yml
 
 ---
 
