@@ -15,7 +15,7 @@
 ```
 Select ConfigMap.
 
-Config-map.yaml
+Config-map.yml
 
 Now deploy the below yaml file, this will reference the configmap in your deployment and deploy the service. 
 Configmap-dep2.yaml
