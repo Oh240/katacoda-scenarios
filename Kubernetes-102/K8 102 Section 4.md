@@ -42,7 +42,7 @@ Notice that there is something called a ReplicaSet. Under the hood, a Deployment
 Find your output! Use kubectl logs and then the name of your pod to see the output.
 
 
-`kubectl logs pod/a123456-deployment-69f948f6f9-wh9sb
+`kubectl logs pod/a123456-deployment-865fbbf84f-w9g5g
 `{{execute}}
 "Hello world!" Should be displayed
 Congrats! Your first Kubernetes Pod is live!
@@ -51,7 +51,7 @@ Now let's delete the pod and see what happens.
 
 ---
 
-`kubectl delete pod/a123456-deployment-69f948f6f9-wh9sb
+`kubectl delete pod/a123456-deployment-865fbbf84f-w9g5g
 `{{execute}}
 pod "sample-deployment-69f948f6f9-wh9sb" deleted
 Notice that the pod name is different from the one before, this means that Kubernetes deployed a new pod when the pod gets deleted.
