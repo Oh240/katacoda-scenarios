@@ -17,8 +17,8 @@ Select ConfigMap.
 
 Config-map.yml
 
-Now deploy the below yaml file, this will reference the configmap in your deployment and deploy the service. 
-Configmap-dep2.yaml
+Now deploy the below yml file, this will reference the configmap in your deployment and deploy the service. 
+Configmap-dep2.yml
 
 Test connectivity to nginx:
 `kubectl run -n sandbox -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-o719580.sandbox.svc.cluster.local"
