@@ -1,8 +1,8 @@
 {
     "noindex": true,
-    "title": "Kubernetes Playground using k3s",
-    "description": "Kubernetes Playground using k3s",
-    "time": "20-30 minutes",
+    "title": "Creating, Referencing, and Editing a ConfigMap",
+    "description": "Creating, Referencing, and Editing a ConfigMap",
+    "time": "10-20 minutes",
     "details": {
         "steps": [
             {
