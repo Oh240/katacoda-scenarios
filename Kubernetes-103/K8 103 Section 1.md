@@ -46,7 +46,7 @@ Another way to ensure everything was deployed properly, is by running the below 
 
 svc, deploy, and po are short for service, deployment and pod
 
-In our service.yaml, we did not specify a Type for our Service. Kubernetes automatically assigned it a Type of ClusterIP and gave it a cluster internal IP address over the port that we declared.
+In our service.yml, we did not specify a Type for our Service. Kubernetes automatically assigned it a Type of ClusterIP and gave it a cluster internal IP address over the port that we declared.
 
 
 ---
