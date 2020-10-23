@@ -1,7 +1,7 @@
 {
     "noindex": true,
-    "title": "Kubernetes Playground using k3s",
-    "description": "Kubernetes Playground using k3s",
+    "title": "Kubernetes: Creating and Referencing Secrets ",
+    "description": "Kubernetes: Creating and Referencing Secrets",
     "time": "10-20 minutes",
     "details": {
         "steps": [
