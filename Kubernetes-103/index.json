@@ -7,7 +7,7 @@
         "steps": [
             {
                 "title": "Kubernetes Services",
-                "text": "K8 103 Section 1.md"
+                "text": "K8 103 Section 1.md",
                 "code": "foreground.sh"
             },
             {
