@@ -7,7 +7,8 @@
         "steps": [
             {
                 "title": "Creating Secrets",
-                "text": "K8 105 Section 2.md"
+                "text": "K8 105 Section 2.md",
+                "code": "foreground.sh"
             },
             {
                 "title": "Referencing Secrets",
