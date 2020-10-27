@@ -19,6 +19,8 @@ Run the below command
 
 `kubectl config current-context
 `{{execute}}
+
+
 kind-kind
 After confirming that we are pointed to the right Kubernetes cluster, we can now apply the YML file to that cluster.
 
