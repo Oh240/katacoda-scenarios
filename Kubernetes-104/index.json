@@ -7,7 +7,8 @@
         "steps": [
             {
                 "title": "Creating and Referencing a ConfigMap",
-                "text": "K8 104 Section 2.md"
+                "text": "K8 104 Section 2.md",
+                "code": "foreground.sh"
             },
             {
                 "title": "Editing a ConfigMap",
