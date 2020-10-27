@@ -98,7 +98,7 @@ Run the command again and see what happens. After a few moments, all Pods tied t
 
 No resources found.
 
-Alternatively, you can also delete objects from Kubernetes using the .yaml/.yml file that you applied them with.
+Alternatively, you can also delete objects from Kubernetes using the .yml file that you applied them with.
 
 
 `kubectl delete -f deployment.yml
