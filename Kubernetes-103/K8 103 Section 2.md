@@ -20,6 +20,8 @@ Deploy the Pod and curl the Service from within the Pod:
 `{{execute}}
 
 ---
+
+
 This method of deploying a Pod and testing connectivity to a Service is a handy troubleshooting technique.
 -i : interactive, keep STDIN (standard input) open even if not attached
 --rm : delete resources created in this command for attached containers
@@ -36,6 +38,8 @@ curl-test : name of new Pod
 
 We can also access our nginx deployment by using kubectl port-forward. It is worth noting that kubectl port-forward does not require a service as you can bind a Pod's port directly to localhost. kubectl port-forward should only be used for development and testing and is not practical for production deployments. There are other Types of Kubernetes services that are better suited for production.
 
+---
+
 Port Forward the nginx Pod to localhost:80
 
 `kubectl port-forward $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name}) 80:80
@@ -43,6 +47,8 @@ Port Forward the nginx Pod to localhost:80
 Forwarding from 127.0.0.1:80 -> 80 Forwarding from [::1]:80 -> 80
 
 Now you are able to access your nginx Deployment from your browser at localhost by searching for localhost:80. Note that if you delete your Pod, a new one will be deployed by your Deployment, but you will have to re-run the kubectl port-forward command as your pod is now under a different name. 
+
+---
 
 You should see a similar image as shown below when access your nginx Deployment from your browser:
 
