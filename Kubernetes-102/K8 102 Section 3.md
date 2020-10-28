@@ -37,7 +37,8 @@ In this example, we are going to deploy in the default namespace. Namespaces are
 ---
 
 
-```kubectl get namespace
+```
+kubectl get namespace
 ```{{execute}}
 
 
