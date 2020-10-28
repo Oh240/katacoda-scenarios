@@ -50,7 +50,7 @@ Notice that there is something called a ReplicaSet. Under the hood, a Deployment
 Find your output! Use kubectl logs and then the name of your pod to see the output.
 
 
-`kubectl logs pod/a123456-deployment-865fbbf84f-w9g5g
+`kubectl -n ingress-nginx logs pod/nginx-ingress-controller --tail-10
 `{{execute}}
 
 "Hello world!" Should be displayed
@@ -63,7 +63,7 @@ Now let's delete the pod and see what happens.
 
 ---
 
-`kubectl delete pod/a123456-deployment-865fbbf84f-w9g5g
+`kubectl delete pod/a123456-deployment
 `{{execute}}
 
 pod "sample-deployment-69f948f6f9-wh9sb" deleted
