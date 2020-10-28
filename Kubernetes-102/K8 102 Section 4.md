@@ -50,7 +50,7 @@ Notice that there is something called a ReplicaSet. Under the hood, a Deployment
 Find your output! Use kubectl logs and then the name of your pod to see the output.
 
 
-`kubectl -n ingress-nginx logs pod/nginx-ingress-controller --tail-10
+`kubectl -n ingress-nginx logs pod/nginx-ingress-controller --tail=10
 `{{execute}}
 
 "Hello world!" Should be displayed
