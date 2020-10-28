@@ -27,9 +27,8 @@ If you want to create your own namespace (for example, sandbox), select the comm
 
 In this example, we are going to deploy in the default namespace. Namespaces are a Kubernetes logical construct used for separating Objects. If you are deploying this on a local cluster, you can create a sandbox namespace using the command kubectl create ns sandbox. However, if you ever want to search for deployments that aren't in the default namespace, you will have to specify the namespace via "kubectl get deployments -n [namespace]". For example kubectl get deployments -n sandbox.
 
-```
-kubectl create ns sandbox
-```{{execute}}
+`kubectl create ns sandbox
+`{{execute}}
 
 ---
 
@@ -38,8 +37,8 @@ kubectl create ns sandbox
 ---
 
 
-```kubectl get namespace
-```{{execute}}
+`kubectl get namespace
+`{{execute}}
 
 
 ***The above command will list the current namespaces in a cluster
