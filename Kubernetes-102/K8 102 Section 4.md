@@ -11,8 +11,7 @@
 
 ---
 
-```
-Before we can apply the YML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case kind-kind is the correct cluster . Run the below command to find that out.
+Before we can apply the YML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case kind-kind is the correct cluster. Run the below command to find that out.
 
 
 Run the below command
