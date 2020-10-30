@@ -6,16 +6,16 @@ metadata:
   name: hello-web-a123456
   namespace: default
   labels:
-    user: o719580
+    user: a123456
 spec:
   replicas: 1
   selector:
     matchLabels:
-      user: o719580
+      user: a123456
    template:
      metadata:
        labels:
-         user: o719580
+         user: a123456
      spec:
        containers:
        - name: nginx
