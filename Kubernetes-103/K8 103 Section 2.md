@@ -53,7 +53,7 @@ Now you are able to access your nginx Deployment from your browser at localhost 
 You should see a similar image as shown below when access your nginx Deployment from your browser:
 
 
-(./kubernetes-k3s/assets/nginx.PNG)
+(./assets/nginx.PNG)
 
 ---
 
