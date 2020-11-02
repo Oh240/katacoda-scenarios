@@ -11,7 +11,7 @@
 
 ---
 
-```The environment variables we defined are the username and password for the Tomcat Manager UI. This is found at http://tomcat-server:8080/manager/html
+The environment variables we defined are the username and password for the Tomcat Manager UI. This is found at http://tomcat-server:8080/manager/html
 Exec into the Tomcat Pod and curl localhost/manager and check the response code:
 To do this, we first need the name of the Tomcat Pod
 `kubectl get pods -l user=a123456
