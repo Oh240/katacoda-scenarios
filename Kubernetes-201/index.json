@@ -2,23 +2,38 @@
     "noindex": true,
     "title": "Kubernetes 201 Quiz",
     "description": "Intro to Containers, Docker and Kurbernetes Quiz",
-    "time": "5-15 minutes",
+    "time": "15-25 minutes",
     "details": {
         "steps": [
             {
-                "title": "Quiz 2",
+                "title": "Question 1 of 3",
                 "text": "step1.md",
                 "answer": "step1-answers.md"
             },
             {
-                "title": "Quiz 2 of 3",
+                "title": "Question 2 of 3",
                 "text": "step2.md",
                 "answer": "step2-answers.md"
             },
             {
-                "title": "Quiz 3 of 3",
+                "title": "Question 3 of 3",
                 "text": "step3.md",
                 "answer": "step3-answers.md"
+            },
+            {
+                "title": "Question 1 of 3",
+                "text": "step1-2.md",
+                "answer": "step1-2-answers.md"
+            },
+            {
+                "title": "Question 2 of 3",
+                "text": "step2-2.md",
+                "answer": "step2-2-answers.md"
+            },
+            {
+                "title": "Question 3 of 3",
+                "text": "step3-2.md",
+                "answer": "step3-2-answers.md"
             }
         ],
         "assets": {
