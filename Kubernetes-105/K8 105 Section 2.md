@@ -1,4 +1,4 @@
-## ## Kubernetes 105, Section 2: Creating Secrets 
+## Kubernetes 105, Section 2: Creating Secrets 
  Deployment
 
 ---
