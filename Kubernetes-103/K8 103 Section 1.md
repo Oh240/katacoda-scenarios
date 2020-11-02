@@ -1,4 +1,4 @@
-## ## Kubernetes 103, Section 1: Kubernetes Services
+## Kubernetes 103, Section 1: Kubernetes Services
 
 ---
 
@@ -40,11 +40,6 @@ To check whether the service exists, you can run the below command:
 
 `kubectl get services
 `{{execute}}
-
----
-
-NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE hello-service-a123456 ClusterIP 10.108.32.116 <none> 80/TCP 10s kubernetes ClusterIP 10.96.0.1 <none> 443/TCP 6d
-Another way to ensure everything was deployed properly, is by running the below command. 
 
 ---
 
