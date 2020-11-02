@@ -2,9 +2,7 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
->>Q3: What is the name of the nginx deployment?<< 
-() nginx-deploy
-(*) nginx-deployment
-() deployment-nginx
-() nginx-dep
+>>Q3: A Worker Node's Pods are scheduled by the... ?<< 
+(*) API server
+() controller manager
 () engine-eh-ks
