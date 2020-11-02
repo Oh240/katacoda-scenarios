@@ -1,4 +1,4 @@
-## ## Kubernetes 105, Section 4: Test Logging Into Test Manager UI
+## Kubernetes 105, Section 4: Test Logging Into Test Manager UI
  Deployment
 
 ---
