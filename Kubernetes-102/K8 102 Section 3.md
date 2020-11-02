@@ -1,4 +1,4 @@
-## Creating the YML File
+## Kubernetes 102, Section 3: Creating the YML File
  Deployment
 
 ---
