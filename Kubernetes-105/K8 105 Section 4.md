@@ -28,6 +28,7 @@ This should return HTTP/1.1 401 because we did not specify a username and passwo
 
 ---
 The below command Logs in using the username and password defined in the Secret, ensures the -is is lower case and not upper when using curl:
+
 `kubectl exec -it tomcat-a123456-849bbb4c6c-llcg8 -- sh -c "curl –is -u admin:password localhost:8080/manager/html | grep HTTP" HTTP/1.1 200
 `{{execute}}
 This should return HTTP/1.1 200
