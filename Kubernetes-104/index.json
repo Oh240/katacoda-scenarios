@@ -1,6 +1,6 @@
 {
     "noindex": true,
-    "title": "Creating, Referencing, and Editing a ConfigMap",
+    "title": "Kubernetes 104: Creating, Referencing, and Editing a ConfigMap",
     "description": "Creating, Referencing, and Editing a ConfigMap",
     "time": "10-20 minutes",
     "details": {
