@@ -1,7 +1,7 @@
 {
     "noindex": true,
-    "title": "Quiz test",
-    "description": "Quiz test",
+    "title": "Katacoda 101 Quiz",
+    "description": "Kubernetes Components",
     "time": "10-20 minutes",
     "details": {
         "steps": [
@@ -24,7 +24,7 @@
         "assets": {
             "host01": [
                 {"file": "*.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "*.yaml", "target": "/root", "chmod": "+r"}
+                {"file": "*.yml", "target": "/root", "chmod": "+r"}
             ]
         },
         "intro": {
