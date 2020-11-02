@@ -1,4 +1,4 @@
-##Creating and Referencing a ConfigMap
+## Kubernetes 104, Section 2: Creating and Referencing a ConfigMap
  Deployment
 
 ---
