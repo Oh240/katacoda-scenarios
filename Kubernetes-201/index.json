@@ -1,12 +1,12 @@
 {
     "noindex": true,
-    "title": "Katacoda 201 Quiz",
+    "title": "Kubernetes 201 Quiz",
     "description": "Intro to Containers, Docker and Kurbernetes Quiz",
-    "time": "10-20 minutes",
+    "time": "5-15 minutes",
     "details": {
         "steps": [
             {
-                "title": "Quiz 1 of 3",
+                "title": "Quiz 2",
                 "text": "step1.md",
                 "answer": "step1-answers.md",
                 "code": "foreground.sh"
@@ -25,7 +25,7 @@
         "assets": {
             "host01": [
                 {"file": "*.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-                {"file": "*.yaml", "target": "/root", "chmod": "+r"}
+                {"file": "*.yml", "target": "/root", "chmod": "+r"}
             ]
         },
         "intro": {
