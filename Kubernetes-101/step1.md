@@ -8,5 +8,5 @@ A K8s cluster consists of both Master Nodes and Worker Nodes. You can have more 
 
 ---
 
->>Q1: How many nodes does a Kubernetes cluster consist of?<<
+>>Q1: Kubernetes clusters consist of at least how many nodes?<<
 === 2
