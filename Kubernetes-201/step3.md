@@ -6,7 +6,7 @@ You don't shut down/reboot/power on containers. Containers are lightweight and c
 
 >>Q2: Select three advantages of containers over virtual machines.<< 
 [*] Not having to shut down/reboot/power on containers
-() Stonger isolation and security measures 
+[] Stonger isolation and security measures 
 [*] Fast deployment times
 [*] Lack of downtime for patches and updates
-() Less sprawl than virtual machines
+[] Less sprawl than virtual machines
