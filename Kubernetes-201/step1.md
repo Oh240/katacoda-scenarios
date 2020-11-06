@@ -8,5 +8,9 @@ The traditional way of hosting applications and services is on a virtual machine
 
 ---
 
+Think of a Docker host as a hypervisor for Docker containers. With Docker installed, you're capable of running as many containers as your computing resources will allow. If virtual machines are about sharing the same hardware, then containers are about sharing the same OS kernel. A Docker host resides one specialized VM (typically Moby Linux) that is designed for hosting containers. Each container that is deployed on that specific host will share that VM's kernel.
+
+---
+
 >>Q1: List the two types of overhead necessary for hosting applications on virtual machines.<< 
 =~= resource overhead, maintenence overhead.
