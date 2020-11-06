@@ -13,4 +13,6 @@ Think of a Docker host as a hypervisor for Docker containers. With Docker instal
 ---
 
 >>Q1: List the two types of overhead necessary for hosting applications on virtual machines.<< 
-=~= resource overhead, maintenence overhead.
+=~= resource overhead, maintenence overhead
+=~= resource and maintenence overhead
+=~= resource and maintenence
