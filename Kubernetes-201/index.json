@@ -6,32 +6,32 @@
     "details": {
         "steps": [
             {
-                "title": "Question 1 of 3",
+                "title": "Section 1: Introduction to Containers",
                 "text": "step1.md",
                 "answer": "step1-answers.md"
             },
             {
-                "title": "Question 2 of 3",
+                "title": "Section 1: Introduction to Containers",
                 "text": "step2.md",
                 "answer": "step2-answers.md"
             },
             {
-                "title": "Question 3 of 3",
+                "title": "Section 1: Introduction to Containers",
                 "text": "step3.md",
                 "answer": "step3-answers.md"
             },
             {
-                "title": "Question 1 of 3",
+                "title": "Section 2: Docker and Kubernetes",
                 "text": "step1-2.md",
                 "answer": "step1-2-answers.md"
             },
             {
-                "title": "Question 2 of 3",
+                "title": "Section 2: Docker and Kubernetes",
                 "text": "step2-2.md",
                 "answer": "step2-2-answers.md"
             },
             {
-                "title": "Question 3 of 3",
+                "title": "Section 2: Docker and Kubernetes",
                 "text": "step3-2.md",
                 "answer": "step3-2-answers.md"
             }
