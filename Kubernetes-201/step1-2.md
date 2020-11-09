@@ -13,6 +13,6 @@ Under the hood, Kubernetes is calling Docker and sending it tasks based off of s
 
 >>Q4: What does Kubernetes allow you to control? Select all that apply. << 
 [*] Kubernetes allows you to control where a container runs
-[] VM's running on your network
+[]  VM's running on your network
 [*] The number of instances of the container
-[] Kubernetes resource management
+[]  Kubernetes resource management
