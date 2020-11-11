@@ -2,24 +2,59 @@
     "noindex": true,
     "title": "Kubernetes 101 Quiz",
     "description": "Kubernetes Components",
-    "time": "5-15 minutes",
+    "time": "15-20 minutes",
     "details": {
         "steps": [
             {
-                "title": "Quiz 1",
+                "title": "Section 1: Kubernetes Components",
                 "text": "step1.md",
                 "answer": "step1-answers.md"
             },
             {
-                "title": "Quiz 2 of 3",
+                "title": "Section 1: Kubernetes Components",
                 "text": "step2.md",
                 "answer": "step2-answers.md"
             },
             {
-                "title": "Quiz 3 of 3",
+                "title": "Section 1: Kubernetes Components",
                 "text": "step3.md",
                 "answer": "step3-answers.md"
-            }
+            },
+            {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step4.md",
+                "answer": "step4-answers.md"
+            },
+            {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step5.md",
+                "answer": "step5-answers.md"
+            },
+                        {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step1-2.md",
+                "answer": "step1-2-answers.md"
+            },
+            {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step2-2.md",
+                "answer": "step2-2-answers.md"
+            },
+            {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step3-2.md",
+                "answer": "step3-2-answers.md"
+            },
+            {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step4-2.md",
+                "answer": "step4-2-answers.md"
+            },
+            {
+                "title": "Section 1: Kubernetes Components",
+                "text": "step5-2.md",
+                "answer": "step5-2-answers.md"
+            },
         ],
         "assets": {
             "host01": [
