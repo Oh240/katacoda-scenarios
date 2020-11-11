@@ -1,2 +1,4 @@
-Q1-Q3: Use kubectl get all -n default to check what is deployed in the default namespace
-` kubectl get all -n default`{{execute}}
+Answer: 
+- Not having to shut down/reboot/power on containers
+- Fast deployment times
+- Lack of downtime for patches and updates
