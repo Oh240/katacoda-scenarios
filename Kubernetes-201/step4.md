@@ -1,4 +1,4 @@
-## Question (7/10)
+## Question (4/10)
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
