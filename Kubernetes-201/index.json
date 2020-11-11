@@ -21,6 +21,16 @@
                 "answer": "step3-answers.md"
             },
             {
+                "title": "Section 1: Introduction to Containers",
+                "text": "step4.md",
+                "answer": "step4-answers.md"
+            },
+            {
+                "title": "Section 1: Introduction to Containers",
+                "text": "step5.md",
+                "answer": "step5-answers.md"
+            },
+            {
                 "title": "Section 2: Docker and Kubernetes",
                 "text": "step1-2.md",
                 "answer": "step1-2-answers.md"
@@ -34,6 +44,16 @@
                 "title": "Section 2: Docker and Kubernetes",
                 "text": "step3-2.md",
                 "answer": "step3-2-answers.md"
+            },
+            {
+                "title": "Section 2: Docker and Kubernetes",
+                "text": "step4-2.md",
+                "answer": "step4-2-answers.md"
+            },
+            {
+                "title": "Section 2: Docker and Kubernetes",
+                "text": "step5-2.md",
+                "answer": "step5-2-answers.md"
             }
         ],
         "assets": {
