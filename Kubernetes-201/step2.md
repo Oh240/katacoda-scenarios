@@ -1,6 +1,7 @@
-## Question (2/10)
+## Question (1/10)
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
+
 ---
 
 ## Translation of Concepts (Container lingo vs. Virtual Machine lingo)
