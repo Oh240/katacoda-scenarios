@@ -54,7 +54,7 @@
                 "title": "Section 1: Kubernetes Components",
                 "text": "step5-2.md",
                 "answer": "step5-2-answers.md"
-            },
+            }
         ],
         "assets": {
             "host01": [
