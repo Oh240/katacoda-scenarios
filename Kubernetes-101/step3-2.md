@@ -3,12 +3,14 @@
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
 ---
+## Kubernetes Introduction
 
-As mentioned, your application is deployed on a Worker Node within a K8s cluster. Kubelet is a process that exists on each Worker Node that listens to the API Server for Pods to be scheduled. A Worker Node can have any given number of Pods scheduled on it, which are scheduled by the API server. The Kubelet can also monitor the health of each Pod on the Node it resides on.
+https://www.youtube.com/watch?v=R-3dfURb2hA
 
 ---
 
->>Q3: A Worker Node's Pods are scheduled by the... ?<< 
-(*) API server
-() controller manager
-() engine-eh-ks
+>>Q8: Fill in the last key component for Kubernetes (found in the video) after a means to do deployments, an easy way to scale, and ...<< 
+() DDOS protection
+(*) Monitoring
+() Fast-recovery
+() Load-balancing
