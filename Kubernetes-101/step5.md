@@ -11,7 +11,7 @@ Watch the below video and answer the question.
 
 https://www.youtube.com/watch?v=PH-2FfFD2PU
 
->>Q10: After losing a worker, what Kubernetes component would make a decision on where to instantiate it? << 
+>>Q5: After losing a worker, what Kubernetes component would make a decision on where to instantiate it? << 
 () API server
 (*) Scheduler
 () engine-eh-ks
