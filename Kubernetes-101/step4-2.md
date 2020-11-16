@@ -8,7 +8,7 @@ As mentioned, your application is deployed on a Worker Node within a K8s cluster
 
 ---
 
->>Q3: A Worker Node's Pods are scheduled by the... ?<< 
+>>Q9: A Worker Node's Pods are scheduled by the... ?<< 
 (*) API server
 () controller manager
 () engine-eh-ks
