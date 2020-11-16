@@ -2,6 +2,8 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
+[]
+
 ---
 
 ## PKS (Pivotal Container Service) Overview
