@@ -2,13 +2,11 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
-[]
+![](./assets/PKS.png)
 
 ---
 
 ## PKS (Pivotal Container Service) Overview
-
-![]./assets/PKS.png
 
 ---
 
