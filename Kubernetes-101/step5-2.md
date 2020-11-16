@@ -4,11 +4,14 @@ Note: All questions are mandatory. Once completed, click on the 'Check Answers' 
 
 ---
 
-As mentioned, your application is deployed on a Worker Node within a K8s cluster. Kubelet is a process that exists on each Worker Node that listens to the API Server for Pods to be scheduled. A Worker Node can have any given number of Pods scheduled on it, which are scheduled by the API server. The Kubelet can also monitor the health of each Pod on the Node it resides on.
+## PKS (Pivotal Container Service) Overview
 
 ---
 
->>Q3: A Worker Node's Pods are scheduled by the... ?<< 
-(*) API server
-() controller manager
-() engine-eh-ks
+https://www.youtube.com/embed/2g1KE5zdbRs?start=10&end=147
+
+
+>>Q10: The PKS API allows development teams to access and request multiple Kubernetes...<< 
+() Deployments
+() Pods
+(*) Clusters
