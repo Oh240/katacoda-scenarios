@@ -8,6 +8,8 @@ Note: All questions are mandatory. Once completed, click on the 'Check Answers' 
 
 ## PKS (Pivotal Container Service) Overview
 
+![]./assets/PKS.png
+
 ---
 
 https://www.youtube.com/embed/2g1KE5zdbRs?start=10&end=147
