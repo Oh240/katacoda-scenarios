@@ -1,2 +1,1 @@
-Q1-Q3: Use kubectl get all -n default to check what is deployed in the default namespace
-` kubectl get all -n default`{{execute}}
+Q4: The answer is located in the last sentence in the description. 
