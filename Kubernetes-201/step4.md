@@ -7,7 +7,7 @@ Note: All questions are mandatory. Once completed, click on the 'Check Answers' 
 
 ## How It Works 
 
->>Q7: What does Kubernetes allow you to control? Select all that apply. << 
+>>Q4: What does Kubernetes allow you to control? Select all that apply. << 
 [*] Kubernetes allows you to control where a container runs
 []  VM's running on your network
 [*] The number of instances of the container
