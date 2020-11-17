@@ -1,2 +1,2 @@
-Q1-Q3: Use kubectl get all -n default to check what is deployed in the default namespace
-` kubectl get all -n default`{{execute}}
+Q4: - Kubernetes allows you to control where a container run
+    - The number of instances of the container
