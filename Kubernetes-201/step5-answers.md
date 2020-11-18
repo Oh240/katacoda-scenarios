@@ -1,1 +1,1 @@
-Q5 Answers: Kubectl commands, YAML files
+Q5 Answer: Kubectl commands, YAML files
