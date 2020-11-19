@@ -2,15 +2,18 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
----
+![](./assets/Dockerfile.jpg)
 
-![](./assets/Container-vs-vm.jpg)
+## Docker Containers
 
-## Translation of Concepts (Container lingo vs. Virtual Machine lingo)
-
-Your container image repository can be compared to your data store for ISO images. The Dockerfile contains the step by step build instructions of the container image. It specifies which dependencies are to be installed and what configurations should be set, similar to an Ansible Template for a VM. You don't shut down/reboot/power on containers. Containers are lightweight and can be deployed within a matter of seconds. When you deploy a container, it instantly knows what it needs to do and it does that. If it crashes, a new one can be deployed and running almost immediately. If it is no longer needed, it can be killed and removed almost immediately as well. If built properly, you will never have to "logon" to a container to configure it to get it running. With VMs you experience downtime for patches and updates. With containers any new updates are specified in the Dockerfile. You build and deploy the new container per the Dockerfile. Once that container is up and running, the old container can be terminated.
+When a container is built, the base OS version, dependencies, source code, and configurations are all declared in what is called the Dockerfile. On build, Docker references the Dockerfile and builds the image from scratch per the specification of the file. This means that if you ever need to change or add a dependency, you simply edit the Dockerfile and rebuild the image. Building an image is a process that typically takes less than a minute. This allows you to havean entire application ready for deployment and deployed within minutes, compared to the days that it could potentially take to get a VM provisioned and the proper dependencies installed and configured properly. Developers write the Dockerfiles for their application once they are ready to deploy it. This eliminates the need for the developers to have to rely on Infrastructure Admins to get their application properly running on a VMwith the right dependencies and configurations set. In short, containers are easier to deploy and have a lot less overhead than virtual machines.
 
 ---
->>Q2: True or False ~ Containers are about sharing the same OS kernel, whereas virtual machines are about sharing the same hardware. << 
-(*) True
-() False
+
+Think of a Docker host as a hypervisor for Docker containers. With Docker installed, you capable of running as many containers as your computing resources will allow.If virtual machines are about sharing the same hardware, then containers are about sharing the same OS kernel.A Docker host resides one specialized VM (typicallyMoby Linux) that is designed for hosting containers. Each container that is deployed on that specific host will share thatVM's kernel.
+
+---
+>>Q2: Whenever changing or adding a dependency, you just need to... << 
+[] Update the container
+[] Build a new pod
+[*] Edit the Dockerfile and rebuild the image
