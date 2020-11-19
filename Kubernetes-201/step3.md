@@ -2,13 +2,11 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
-## Translation of Concepts Continued (Container lingo vs. Virtual Machine lingo)
+## Container Lifecycle
 
-You don't shut down/reboot/power on containers. Containers are lightweight and can be deployed within a matter of seconds. When you deploy a container, it instantly knows what it needs to do and it does that. If it crashes, a new one can be deployed and running almost immediately. If it is no longer needed, it can be killed and removed almost immediately as well. If built properly, you will never have to "logon" to a container to configure it to get it running. With VMs you experience downtime for patches and updates. With containers any new updates are specified in the Dockerfile.
+With all of this said, containers are not always going to be the answer. There will still be use cases for deploying to a VM vs. deploying containers. One thing is containers are not recommended for stateful applications, or applications that need to store information in a persistent storage volume. Since containers are ephemeral and are frequently deployed and redeployed on a Docker host, they by default do retain any information, files, or local configuration changes from runtime. On each deployment, a fresh image of that container is pulled from an image repository (which can contain one or more versions of that container image). Once the image is pulled, the Docker engine on the host will cache a copy of the image. The Docker host will use the cached copy of an image for deployments until changes are detected on that image. If there are any new changes to be made to a container, the container's image must be rebuilt, pushed to the repository and redeployed. When deployed, the Docker engine will notice the image in the image repository differs from its cached copy. Then, only new or updated layers of that image will be pulled down to the image that is has cached. Once pulled, the container will be deployed.
 
->>Q3: Select three advantages of containers over virtual machines.<< 
-[*] Not having to shut down/reboot/power on containers
-[] Stonger isolation and security measures 
-[*] Fast deployment times
-[*] Lack of downtime for patches and updates
-[] Less sprawl than virtual machines
+
+>>Q3: Containers are recommended for stateful applications.<<
+() True
+(*) False
