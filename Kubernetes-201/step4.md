@@ -2,14 +2,14 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
-![](./assets/K8-Arch.jpg)
-## How Kubernetes Works
+![](./assets/Container-vs-vm.jpg)
 
-Under the hood, Kubernetes is calling Docker and sending it tasks based off of specifications that a user declares. A user tells Kubernetes what to do with Docker containers via kubectl commands and YAML files, the ways in which you collect information and declare Objects within Kubernetes. Kubectl (pronounced kube control... be careful how you pronounce it, it's a big deal for some) is a command line tool used for interacting with a Kubernetes cluster. Once Kubernetes is told what to do with a container, it takes over from there. You will never need to
-use Docker commands with Kubernetes once the image is built. Kubernetes allows you to control where a container runs, the amount of resources it can consume, what applications it can talk to, the number of instances of the container, and much more.
+## Translation of Concepts (Container lingo vs. Virtual Machine lingo)
 
->>Q4: What does Kubernetes allow you to control? Select all that apply. << 
-[*] Kubernetes allows you to control where a container runs
-[]  VM's running on your network
-[*] The number of instances of the container
-[]  Kubernetes resource management
+Your container image repository can be compared to your data store for ISO images. The Dockerfile contains the step by step build instructions of the container image. It specifies which dependencies are to be installed and what configurations should be set, similar to an Ansible Template for a VM. You don't shut down/reboot/power on containers. Containers are lightweight and can be deployed within a matter of seconds. When you deploy a container, it instantly knows what it needs to do and it does that. If it crashes, a new one can be deployed and running almost immediately. If it is no longer needed, it can be killed and removed almost immediately as well. If built properly, you will never have to "logon" to a container to configure it to get it running. With VMs you experience downtime for patches and updates. With containers any new updates are specified in the Dockerfile. You build and deploy the new container per the Dockerfile. Once that container is up and running, the old container can be terminated.
+
+
+>>Q4: What DON'T Containers require (if built properly) that VM's do?
+() Maintenance
+(*) Shut down/reboot/power on
+() Orchestration
