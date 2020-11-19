@@ -1,2 +1,1 @@
-Q1-Q3: Use kubectl get all -n default to check what is deployed in the default namespace
-` kubectl get all -n default`{{execute}}
+Q6 Answer: Clusters, Nodes, and Pods
