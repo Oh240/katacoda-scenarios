@@ -2,17 +2,10 @@
 
 Note: All questions are mandatory. Once completed, click on the 'Check Answers' button to validate and continue to the next question.
 
+## High Level Overview of Kubernetes
 
-## The Role of Kubernetes 
+Kubernetes builds on top of Docker. It adds its own layers of infrastructure. Scaling down from the top layer, Kubernetes (also known as K8s - pronounced "kates") consists of Clusters, Nodes, and Pods. A Cluster is a pool of Nodes, whose resources are combined and shared across the cluster. A Node is commonly referred to as a host. In a typical environment, a Node is a virtual machine or physical host with a specialized operating system that is optimized for running the Docker engine. A Cluster can consist of any number of Nodes. Pods are what get
+deployed onto these Nodes. A Pod receives its own IP address within the cluster and consists of one or more containers or storage volumes. Each container in a Pod shares kernel space with the Node it resides on. When a Pod is deployed, Kubernetes will find a Node that has the available resources to run that Pod. 
 
-Kubernetes is not the actual engine that is running your containerized applications. Kubernetes is the orchestrator of Docker containers and it does not exist without a container runtime. Founded by Google, Kubernetes is the container-orchestration system for automating application deployment, scaling, and management. In terms of a CI/CD pipeline, Kubernetes is the Continuous Delivery component. 
-
-## How It Works 
-
-Under the hood, Kubernetes is calling Docker and sending it tasks based off of specifications that a user declares. A user tells Kubernetes what to do with Docker containers via kubectl commands and YAML files, the ways in which you collect information and declare Objects within Kubernetes. Kubectl (pronounced kube control... be careful how you pronounce it, it's a big deal for some) is a command line tool used for interacting with a Kubernetes cluster. Once Kubernetes is told what to do with a container, it takes over from there. You will never need to use Docker commands with Kubernetes once the image is built. Kubernetes allows you to control where a container runs, the amount of resources it can consume, what applications it can talk to, the number of instances of the container, and much more.
-
->>Q6: What does Kubernetes allow you to control? Select all that apply. << 
-[*] Kubernetes allows you to control where a container runs
-[]  VM's running on your network
-[*] The number of instances of the container
-[]  Kubernetes resource management
+>>Q6: What are the three layers of infrastructure Kubernetes consists of?<< 
+=~= Clusters, Nodes, and Pods
