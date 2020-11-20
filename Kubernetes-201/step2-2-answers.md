@@ -1,1 +1,1 @@
-Q7 Answer: Continuous Delivery
+Q7 Answer: Kubectl commands, YAML files
