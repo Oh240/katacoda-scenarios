@@ -1,4 +1,4 @@
-## ## Kubernetes 103, Section 2: Accessing a Service
+## Kubernetes 103, Section 2: Accessing a Service
  Deployment
 
 ---
@@ -53,7 +53,7 @@ Now you are able to access your nginx Deployment from your browser at localhost 
 You should see a similar image as shown below when access your nginx Deployment from your browser:
 
 
-(./assets/nginx.PNG)
+![](./assets/nginx.PNG)
 
 ---
 
