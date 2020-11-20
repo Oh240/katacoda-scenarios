@@ -1,5 +1,4 @@
 ## Kubernetes 105, Section 3: Referencing Secrets
- Deployment
 
 ---
 
