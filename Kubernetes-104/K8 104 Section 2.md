@@ -12,10 +12,11 @@
 ---
 
 
-```
+
 Select ConfigMap.
 
-Config-map.yml
+`Config-map.yml
+`{{execute}}
 
 Now deploy the below yml file, this will reference the configmap in your deployment and deploy the service. 
 Configmap-dep2.yml
