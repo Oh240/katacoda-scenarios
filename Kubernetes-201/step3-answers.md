@@ -1,4 +1,1 @@
-Answer: 
-- Not having to shut down/reboot/power on containers
-- Fast deployment times
-- Lack of downtime for patches and updates
+Q3 Answer:False
