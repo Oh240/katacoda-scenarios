@@ -14,6 +14,6 @@ Think of a Docker host as a hypervisor for Docker containers. With Docker instal
 
 ---
 >>Q2: Whenever changing or adding a dependency, you just need to... << 
-[] Update the container
-[] Build a new pod
-[*] Edit the Dockerfile and rebuild the image
+() Update the container
+() Build a new pod
+(*) Edit the Dockerfile and rebuild the image
