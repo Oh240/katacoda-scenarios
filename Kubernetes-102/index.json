@@ -6,12 +6,12 @@
     "details": {
         "steps": [
             {
-                "title": "Creating the YAML File",
+                "title": "Creating the YML File",
                 "text": "K8 102 Section 3.md",
                 "code": "foreground.sh"
             },
             {
-                "title": "Applying the YAML File",
+                "title": "Applying the YML File",
                 "text": "K8 102 Section 4.md"
             }
         ],
