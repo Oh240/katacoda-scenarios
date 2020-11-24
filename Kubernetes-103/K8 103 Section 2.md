@@ -1,6 +1,4 @@
 ## Kubernetes 103, Section 2: Accessing a Service
- Deployment
-
 ---
 
 **WARNING - YOU HAVE LESS THAN 1 HOUR BEFORE YOUR SESSION EXPIRES!**
@@ -64,4 +62,3 @@ Once you're done, you can remove everything with the below command:
 It should display “service "hello-service-a123456"
 
 deleted deployment.extensions "hello-web-a123456" deleted”
-
