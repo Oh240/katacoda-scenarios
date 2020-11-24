@@ -11,11 +11,13 @@
 ---
 
 Insert the Secrets as environment variables into the Pod in the Tomcat Deployment and save it as deploy3.yaml or deploy3.yml:
+
 `deploy3.yml
 `{{execute}}
 ---
 
 Apply the Deployment and the Service:
+
 `kubectl apply -f deploy3.yml
 `{{execute}}
 
