@@ -12,11 +12,15 @@
 
 Deploy ConfigMap.
 
-`kubectl apply -f Config-map.yml
+`kubectl apply -f config-map.yml
 `{{execute}}
 
 Now deploy the below yml file, this will reference the configmap in your deployment and deploy the service. 
-Configmap-dep2.yml
+configmap-dep2.yml
+
+
+`kubectl apply -f configmap-dep2.yml
+`{{execute}}
 
 ---
 
