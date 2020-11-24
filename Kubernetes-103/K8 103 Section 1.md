@@ -22,6 +22,8 @@ First, let's create a deployment of nginx, it’s called deploy.yml. Select depl
 
 Next, we need to apply the deployment deploy.yml to the cluster. Select the below command. 
 
+---
+
 `kubectl apply -f deploy.yml
 `{{execute}}
 
