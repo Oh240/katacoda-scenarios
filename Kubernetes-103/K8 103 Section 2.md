@@ -14,11 +14,11 @@ Now that we have a web server running and a service bound to it, we are able to 
 
 Deploy the Pod and curl the Service from within the Pod:
 
-`kubectl create ns sandbox
+`kubectl create ns default
 `{{execute}}
 
 
-`kubectl run -n sandbox -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.sandbox.svc.cluster.local"
+`kubectl run -n default -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.default.svc.cluster.local"
 `{{execute}}
 
 ---
@@ -44,9 +44,9 @@ We can also access our nginx deployment by using kubectl port-forward. It is wor
 
 Port Forward the nginx Pod to localhost:80
 
-`kubectl port-forward $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name}) 80:80
+`kubectl port-forward $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name}) --address 0.0.0.0 8080:80
 `{{execute}}
-Forwarding from 127.0.0.1:80 -> 80 Forwarding from [::1]:80 -> 80
+Forwarding from 0.0.0.0:8080 -> 80 Forwarding from [::1]:80 -> 80
 
 Now you are able to access your nginx Deployment from your browser at localhost by searching for localhost:80. Note that if you delete your Pod, a new one will be deployed by your Deployment, but you will have to re-run the kubectl port-forward command as your pod is now under a different name. 
 
