@@ -45,8 +45,8 @@ metadata:
 spec:
   selector:
     user: o719580
-ports:
-  - name: http
-    port: 80 # port the service will open on
-    targetPort: 8080 # port the Pod is listening on (reference containerPort
+  ports:
+    - name: http
+      port: 80 # port the service will open on
+      targetPort: 8080 # port the Pod is listening on (reference containerPort
 #in the deployment)
