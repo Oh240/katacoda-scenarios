@@ -1,24 +1,23 @@
 
 #deploy a sample web server in the sandbox namespace with label user
-apiVersion: apps/v1 #change according to what is current
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-web-a123456
-  namespace: default
+  name: nginx-deployment
   labels:
-    user: a123456
+    app: nginx
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      user: a123456
-   template:
-     metadata:
-       labels:
-         user: a123456
-     spec:
-       containers:
-       - name: nginx
-         image: nginx
-         ports:
-         - containerPort: 80
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
