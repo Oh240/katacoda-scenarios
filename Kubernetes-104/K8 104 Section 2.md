@@ -27,7 +27,7 @@ configmap-dep2.yml
 ---
 
 Test connectivity to nginx:
-`kubectl run -n sandbox -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-o719580.sandbox.svc.cluster.local"
+`kubectl run -n default -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.default.svc.cluster.local"
 `{{execute}}
 
 
