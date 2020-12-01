@@ -14,6 +14,10 @@ Now that we have a web server running and a service bound to it, we are able to 
 
 Deploy the Pod and curl the Service from within the Pod:
 
+`kubectl create ns sandbox
+`{{execute}}
+
+
 `kubectl run -n sandbox -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.sandbox.svc.cluster.local"
 `{{execute}}
 
