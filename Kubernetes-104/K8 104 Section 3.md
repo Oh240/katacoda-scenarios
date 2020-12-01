@@ -16,7 +16,7 @@ One of the benefits of using a ConfigMap is that they allow you to make edits to
 
 Change the index.html page by editing your ConfigMap YAML. When you are done, apply it.
 
-`kubectl apply -f configmap.yml
+`kubectl apply -f config-map.yml
 `{{execute}}
 
 It will display “configmap/nginx-index-a123456 configured”
@@ -28,7 +28,7 @@ It may take a few moments for the changes to be applied. Under the hood, nginx i
 See the changes:
 
 
-`kubectl run -n sandbox -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.sandbox.svc.cluster.local"
+`kubectl run -n default -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.default.svc.cluster.local"
 `{{execute}}
 
 It will display “pod "curl-test" deleted”
