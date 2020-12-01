@@ -18,6 +18,8 @@ Deploy ConfigMap.
 Now deploy the below yml file, this will reference the configmap in your deployment and deploy the service. 
 configmap-dep2.yml
 
+`kubectl create ns sandbox
+`{{execute}}
 
 `kubectl apply -f configmap-dep2.yml
 `{{execute}}
