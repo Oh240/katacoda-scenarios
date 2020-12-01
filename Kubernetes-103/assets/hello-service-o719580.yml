@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:  hello-service-o719580
+  name:  hello-service-a123456
   labels:
-    user: hello-service-o719580
+    user: hello-service-a123456
 spec:
   selector:
-    user: o719580
+    user: a123456
   ports:
   - port:  80
     protocol:  TCP
