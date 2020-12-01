@@ -10,20 +10,22 @@
 
 ---
 
-Insert the Secrets as environment variables into the Pod in the Tomcat Deployment and save it as deploy3.yaml or deploy3.yml:
+
+By default, Kubernetes requires data stored in Secrets to be base64 encoded. For the Secret for the username we are going to define, we must first base64 encode the username.
+`echo -n 'admin' | base64 YWRtaW4=
+`{execute}
 
 ---
 
-`kubectl create ns sandbox
-`{{execute}}
+Apply secret.yml. 
+`kubectl apply -f secret.yml
+`{execute}
 
-Apply the Deployment and the Service:
-
-`kubectl apply -f deploy3.yml
-`{{execute}}
+Base64 encode the password:
+`echo -n 'password' | base64 cGFzc3dvcmQ=
+`{execute}
 
 ---
 
-
-It will state “deployment.extensions/tomcat-a123456 created 
-service/tomcat-service-a123456 created”
+Apply the Secrets:
+$ kubectl apply -f secret.yml
