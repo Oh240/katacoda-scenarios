@@ -56,10 +56,8 @@ You should see a similar image as shown below when access your nginx Deployment 
 
 ---
 
-Once you're done, you can remove everything with the below command:
+Once you're finished, stop the port forward with control + c and you can remove everything with the below command:
 `kubectl delete svc,deploy -l user=a123456
 `{{execute}}
 
-It should display “service "hello-service-a123456"
-
-deleted deployment.extensions "hello-web-a123456" deleted”
+It should display deployment.apps "hello-web-a123456" deleted
