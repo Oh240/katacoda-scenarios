@@ -20,7 +20,7 @@
 
 ---
 
-If you want to create your own namespace (for example, sandbox), select the commands below, if not, skip this step:
+To create your own namespace (for example, sandbox), select the commands below, if not, skip this step:
 
 ---
 
@@ -33,6 +33,8 @@ In this example, we are going to deploy in the default namespace. Namespaces are
 
 “namespace/sandbox created” will be displayed
 
+
+**Note, this is NOT a mandatory step.
 ---
 
 
