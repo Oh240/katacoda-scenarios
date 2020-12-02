@@ -13,4 +13,4 @@
 Apply the Deployment and the Service:
 
 `kubectl apply -f deploy3.yml
-`{execute}
+`{{execute}}
