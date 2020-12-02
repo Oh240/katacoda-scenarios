@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tomcat-o719580
-  namespace: sandbox
+  name: tomcat-a123456
+  namespace: default
   labels:
-    user: o719580
+    user: a123456
 spec:
   replicas: 1
   selector:
     matchLabels:
-      user: o719580
+      user: a123456
   template:
     metadata:
       labels:
-        user: o719580
+        user: a123456
     spec:
       containers:
       - name: tomcat
@@ -24,13 +24,13 @@ spec:
           - name: "TOMCAT_PASSWORD" # env variable for tomcat container
             valueFrom:
               secretKeyRef: # reference a secret
-                name: tomcat-pass-o719580 # name of the secret for the
+                name: tomcat-pass-a123456 # name of the secret for the
 #tomcat username we defined
                 key: "TOMCAT_PASSWORD" # value to extract from the secret
           - name: "TOMCAT_USERNAME" # env variable for tomcat container
             valueFrom:
               secretKeyRef: # reference a secret
-                name: tomcat-user-o719580 # name of the secret for the tomcat
+                name: tomcat-user-a123456 # name of the secret for the tomcat
 #password we defined
                 key: "TOMCAT_USERNAME" # value to extract from the
 #secret#define a service for tomcat deployment
@@ -38,13 +38,13 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: tomcat-service-o719580
+  name: tomcat-service-a123456
   namespace: default
   labels:
-    user: o719580
+    user: a123456
 spec:
   selector:
-    user: o719580
+    user: a123456
   ports:
     - name: http
       port: 80 # port the service will open on
