@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-web-o719580
-  namespace: sandbox
+  name: hello-web-a123456
+  namespace: default
   labels:
-    user: o719580
+    user: a123456
 spec:
   replicas: 1
   selector:
     matchLabels:
-      user: o719580
+      user: a123456
   template:
     metadata:
       labels:
-        user: o719580
+        user: a123456
     spec:
       containers:
       - name: nginx
@@ -28,19 +28,19 @@ spec:
       volumes:
         - name: index-html
           configMap:
-            name: nginx-index-o719580 # the name of the configmap we are 
+            name: nginx-index-a123456 # the name of the configmap we are 
 #referencing
 ---
 kind: Service
 apiVersion: v1
 metadata:
-  name: hello-service-o719580
-  namespace: sandbox
+  name: hello-service-a123456
+  namespace: default
   labels:
-    user: o719580
+    user: a123456
 spec:
   selector:
-    user: o719580
+    user: a123456
   ports:
   - port: 80
     protocol: TCP
