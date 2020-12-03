@@ -8,6 +8,9 @@ As mentioned, your application is deployed on a Worker Node within a K8s cluster
 
 ---
 
+![](./assets/Kubelet.png)
+
+
 >>Q3: A Worker Node's Pods are scheduled by the... ?<< 
 (*) API server
 () controller manager
