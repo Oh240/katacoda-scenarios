@@ -63,10 +63,10 @@ Now let's delete the pod and see what happens.
 
 ---
 
-`kubectl delete pod/a123456-deployment
+`kubectl delete pod $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name})
 `{{execute}}
 
-pod "sample-deployment-69f948f6f9-wh9sb" deleted
+pod "" deleted
 
 Notice that the pod name is different from the one before, this means that Kubernetes deployed a new pod when the pod gets deleted.
 
