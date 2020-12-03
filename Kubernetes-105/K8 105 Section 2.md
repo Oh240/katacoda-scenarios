@@ -12,6 +12,8 @@
 
 
 By default, Kubernetes requires data stored in Secrets to be base64 encoded. For the Secret for the username we are going to define, we must first base64 encode the username.
+
+Base64 encode the username:
 `echo -n 'YWRtaW4=' | base64 
 `{{execute}}
 ---
