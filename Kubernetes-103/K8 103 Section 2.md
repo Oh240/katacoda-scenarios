@@ -49,13 +49,6 @@ Navigate to the dashboard tab, to the right of the terminal tab and enter "8080"
 
 ---
 
-You should see a similar image as shown below when access your nginx Deployment from your browser:
-
-
-![](./assets/nginx.PNG)
-
----
-
 Once you're finished, stop the port forward with control + c and you can remove everything with the below command:
 `kubectl delete svc,deploy -l user=a123456
 `{{execute}}
