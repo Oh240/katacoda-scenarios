@@ -1,5 +1,4 @@
 ## Kubernetes 102, Section 4: Applying the YML File
- Deployment
 
 ---
 
