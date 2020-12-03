@@ -45,7 +45,7 @@ Port Forward the nginx Pod to localhost:80
 `{{execute}}
 Forwarding from 0.0.0.0:8080 -> 80 Forwarding from [::1]:80 -> 80
 
-Navigate to the dashboard tab, to the right of the terminal tab and enter "8080" as the port number. Then select enter and a "Welcome to nginx" screen should appear. Note that if you delete your Pod, a new one will be deployed by your Deployment, but you will have to re-run the kubectl port-forward command as your pod is now under a different name. 
+Navigate to the dashboard tab, to the right of the terminal tab and enter "8080" as the port number. Then select "Display Port" and a "Welcome to nginx" screen should appear. Note that if you delete your Pod, a new one will be deployed by your Deployment, but you will have to re-run the kubectl port-forward command as your pod is now under a different name. 
 
 ---
 
