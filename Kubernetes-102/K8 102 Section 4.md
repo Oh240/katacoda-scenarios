@@ -10,7 +10,7 @@
 
 ---
 
-Before we can apply the YML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case kind-kind is the correct cluster. Run the below command to find that out.
+Before we can apply the YML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case default is the correct cluster. Run the below command to find that out.
 
 
 Run the below command
@@ -26,22 +26,21 @@ After confirming that we are pointed to the right Kubernetes cluster, we can now
 `kubectl apply -f deployment.yml
 `{{execute}}
 
-deployment.extensions/a123456-deployment created
+deployment.apps/a123456-deployment created
 
-To check that the deployment is there, run the below command to list all the deployments within your Kubernetes cluster and check for the existence of what you changed a123456 to. You should see something similar to what is shown below.
+To check that the deployment is there, run the command below to list all the deployments within your Kubernetes cluster and check for the existence of your username. You should see something similar to what is shown below.
 
 
 `kubectl get deployments
 `{{execute}}
 
 
-Let's now check the status of the deployment. Make sure to replace the user according to what you changed it to be.
-
----
+Let's now check the status of the deployment with the command below. 
 
 `kubectl get all -l user=a123456
 `{{execute}}
 
+---
 
 Notice that there is something called a ReplicaSet. Under the hood, a Deployment actually creates a ReplicaSet, which is responsible for maintaining the number of replicas for the Pod that you specified in your Deployment.
 
@@ -65,22 +64,21 @@ Now let's delete the pod and see what happens.
 `kubectl delete pod $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name})
 `{{execute}}
 
-pod "" deleted
+pod "a123456-deployment-xxxx-xxxx" deleted
 
 Notice that the pod name is different from the one before, this means that Kubernetes deployed a new pod when the pod gets deleted.
 
+Now let's see everything created under the user "a123456". 
 
 `kubectl get all -l user=a123456
 `{{execute}}
 
 Now let's try deleting the deployment.
 
----
-
 `kubectl delete deploy -l user=a123456
 `{{execute}}
 
-deployment.extensions "a123456-deployment" deleted
+deployment.apps "a123456-deployment" deleted
 And check what is happening to the Pods
 
 
@@ -94,14 +92,4 @@ Run the command again and see what happens. After a few moments, all Pods tied t
 `kubectl get all -l user=a123456
 `{{execute}}
 
-No resources found.
-
-Alternatively, you can also delete objects from Kubernetes using the .yml file that you applied them with.
-
-
-`kubectl delete -f deployment.yml
-`{{execute}}
-
-deployment.extensions "a123456-deployment" deleted
-
----
+"No resources found" should be displayed. 
