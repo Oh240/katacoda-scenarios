@@ -20,7 +20,7 @@ To do this, we first need the name of the Tomcat Pod
  
  
 The below command Exec’s into the Pod, curls localhost, returns output, looks for response code, then exits the exec session:
-`kubectl exec -it tomcat-a123456-99464c7d4-lkwxc -- sh -c "curl -is localhost:8080/manager/html | grep HTTP"
+`kubectl exec -it $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name}) -- sh -c "curl -is localhost:8080/manager/html | grep HTTP"
 `{{execute}}
 HTTP/1.1 401
 
@@ -29,7 +29,7 @@ This should return HTTP/1.1 401 because we did not specify a username and passwo
 ---
 The below command Logs in using the username and password defined in the Secret, ensures the -is is lower case and not upper when using curl:
 
-`kubectl exec -it tomcat-a123456-849bbb4c6c-llcg8 -- sh -c "curl –is -u admin:password localhost:8080/manager/html | grep HTTP"
+`kubectl exec -it $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name}) -- sh -c "curl –is -u admin:password localhost:8080/manager/html | grep HTTP"
 `{{execute}}
 
 This should return HTTP/1.1 200
