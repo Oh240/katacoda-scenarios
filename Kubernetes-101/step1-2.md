@@ -12,6 +12,8 @@ For as long as the application is deployed, Kubernetes will maintain the desired
 
 When an updated version of an application needs to be deployed, Kubernetes can deploy the updated Pods in a "rolling" fashion, eliminating downtime. If an application is experiencing heavy load, Kubernetes can also be configured to scale accordingly by deploying more Pods as needed.
 
+![](./assets/K8-Pods.png)
+
 ---
 
 >>Q6: What are the smallest unit within Kubernetes?<<
