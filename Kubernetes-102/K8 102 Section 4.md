@@ -10,16 +10,10 @@
 
 ---
 
-Before we can apply the YML file to our Kubernetes cluster, we need to make sure that we are pointed towards the right cluster. In this case default is the correct cluster. Run the below command to find that out.
-
-
-Run the below command
+We know since this is a sandboxed environment, the cluster will be "default". If this were a local machine, we would have to ensure we're pointed to the proper cluster before applying the YML file to our Kubernetes cluster with the command below. 
 
 `kubectl config current-context
 `{{execute}}
-
-
-After confirming that we are pointed to the right Kubernetes cluster, we can now apply the YML file to that cluster.
 
 ---
 
