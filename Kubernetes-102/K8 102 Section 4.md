@@ -57,12 +57,14 @@ Congrats! Your first Kubernetes Pod is live!
 
 kubectl logs is a command that views the stdout and stderr from Pods.
 
-Now let's delete the pod and see what happens.
+Now let's delete a single pod and see what happens.
 
 ---
 
 `kubectl delete pod $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name})
 `{{execute}}
+
+Deleting a pod will take some time to delete, so please be patient. 
 
 pod "a123456-deployment-xxxx-xxxx" deleted
 
