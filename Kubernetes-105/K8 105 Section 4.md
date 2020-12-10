@@ -26,7 +26,7 @@ The below command Exec’s into the Pod, curls localhost, returns output, looks 
 This should return HTTP/1.1 401 because we did not specify a username and password.
 
 ---
-The below command Logs in using the username and password defined in the Secret, ensures the -is is lower case and not upper when using curl:
+The below command Logs in using the username and password defined in the Secret, ensures the -is is lower case and not upper when using curl. The secrets deployed are environment variables. 
 
 `kubectl exec -it $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name}) -- sh -c "curl –is -u admin:password localhost:8080/manager/html | grep HTTP"
 `{{execute}}
