@@ -9,24 +9,23 @@
 ![Terminal Time Remaining](./assets/term-expire.png)
 
 ---
+In this lab, we're going to be decoding the username and password of the secrets.yml file. 
+
+By default, Kubernetes requires data stored in Secrets to be base64 encoded (which they are). 
 
 
-By default, Kubernetes requires data stored in Secrets to be base64 encoded. For the Secret for the username we are going to define, we must first base64 encode the username.
+Display the contents of secret.yml. 
+`cat secret.yml
+`{{execute}}
 
-Base64 encode the username:
-`echo -n 'YWRtaW4=' | base64 
+
+Decode the username:
+`echo -n 'YWRtaW4=' | base64 -d
 `{{execute}}
 ---
 
-Apply secret.yml. 
-
-`kubectl apply -f secret.yml
-`{{execute}}
-
-
-
-Base64 encode the password:
-`echo -n 'cGFzc3dvcmQ=' | base64
+Dcode the password:
+`echo -n 'cGFzc3dvcmQ=' | base64 -d
 `{{execute}}
 
 ---
