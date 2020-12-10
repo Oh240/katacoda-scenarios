@@ -16,6 +16,8 @@ Kubernetes Secrets let you store and manage sensitive information, such as passw
 
 A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. Such information might otherwise be put in a Pod specification or in an image. Users can create Secrets and the system also creates some Secrets.
 
+![Kubernetes Secrets Diagram](./assets/K8's-Secrets.png)
+
 ---
 
 In this scenario, we're going to be decoding the username and password of the secrets.yml file. 
