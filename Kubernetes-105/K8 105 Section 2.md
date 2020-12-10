@@ -28,7 +28,7 @@ A Secret is an object that contains a small amount of sensitive data such as a p
 
 In this scenario, we're going to be decoding the username and password of the secret.yml file. 
 
-By default, Kubernetes requires data stored in Secrets to be base64 encoded (which they are). 
+By default, Kubernetes requires data stored in Secrets to be base64 encoded. The base64 command encodes and decodes data, which is what we're going to be using it for in this scenario.  
 
 Step 1:
 Display the contents of secret.yml. 
