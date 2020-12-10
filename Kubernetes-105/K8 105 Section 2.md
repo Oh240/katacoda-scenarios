@@ -9,7 +9,16 @@
 ![Terminal Time Remaining](./assets/term-expire.png)
 
 ---
-In this lab, we're going to be decoding the username and password of the secrets.yml file. 
+
+## Overview of Secrets 
+
+Kubernetes Secrets let you store and manage sensitive information, such as passwords, OAuth tokens, and ssh keys. Storing confidential information in a Secret is safer and more flexible than putting it verbatim in a Pod definition or in a container image. See Secrets design document for more information.
+
+A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. Such information might otherwise be put in a Pod specification or in an image. Users can create Secrets and the system also creates some Secrets.
+
+---
+
+In this scenario, we're going to be decoding the username and password of the secrets.yml file. 
 
 By default, Kubernetes requires data stored in Secrets to be base64 encoded (which they are). 
 
