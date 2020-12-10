@@ -26,22 +26,22 @@ In this scenario, we're going to be decoding the username and password of the se
 
 By default, Kubernetes requires data stored in Secrets to be base64 encoded (which they are). 
 
-*Step 1
+*Step 1:
 Display the contents of secret.yml. 
 `cat secret.yml
 `{{execute}}
 
-*Step 2
+*Step 2:
 Decode the username:
 `echo -n 'YWRtaW4=' | base64 -d
 `{{execute}}
 
-*Step 3
+*Step 3:
 Decode the password:
 `echo -n 'cGFzc3dvcmQ=' | base64 -d
 `{{execute}}
 
-*Step 4
+*Step 4:
 Apply the Secrets:
 `kubectl apply -f secret.yml
 `{{execute}}
