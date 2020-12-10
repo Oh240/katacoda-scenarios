@@ -33,7 +33,7 @@ It will display “configmap/nginx-index-a123456 configured”
 ---
 
 
-It may take a few moments for the changes to be applied. Under the hood, nginx is monitoring the ConfigMap. If a change is applied to the ConfigMap, it will write the new index.html file. All of this is done without a restart of the nginx Pod.
+It will take a few moments for the changes to be applied. Please wait up to 3 minutes after applying the config-map.yml file for the changes to be applied. Under the hood, nginx is monitoring the ConfigMap. If a change is applied to the ConfigMap, it will write the new index.html file. All of this is done without a restart of the nginx Pod.
 See the changes:
 
 
