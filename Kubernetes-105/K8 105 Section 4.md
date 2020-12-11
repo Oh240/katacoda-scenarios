@@ -10,7 +10,7 @@
 
 ---
 
-Test Manager UI Interactive Demo
+## Test Manager UI Interactive Demo
 
 Step 1:
 The environment variables we defined are the username and password for the Tomcat Manager UI. This is found at http://tomcat-server:8080/manager/html
