@@ -18,6 +18,7 @@ One of the benefits of using a ConfigMap is that they allow you to make edits to
 
 Change the index.html page by editing your ConfigMap YAML, via vim. When you are done, apply it.
 
+Step 1:
 This command allows you to edit your config-map.yml file. 
 
 `vim config-map.yml
@@ -25,6 +26,7 @@ This command allows you to edit your config-map.yml file.
 
 Edit the file with by pressing "i", then arrow-down to the index.html section, and edit the text inside the h1 tags. Once finished, click the escape key, followed by the colon key, then press "wq" and the enter key to save the file. 
 
+Step 2:
 Now, apply the config-map.yml file using the below command. 
 
 `kubectl apply -f config-map.yml
@@ -32,14 +34,11 @@ Now, apply the config-map.yml file using the below command.
 
 It will display “configmap/nginx-index-a123456 configured”
 
----
-
-## Steps
 
 It will take a few moments for the changes to be applied. Please wait up to 3 minutes after applying the config-map.yml file for the changes to be applied. Under the hood, nginx is monitoring the ConfigMap. If a change is applied to the ConfigMap, it will write the new index.html file. All of this is done without a restart of the nginx Pod.
 See the changes:
 
-
+Step 3:
 `kubectl run -n default -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.default.svc.cluster.local"
 `{{execute}}
 
