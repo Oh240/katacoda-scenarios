@@ -19,7 +19,7 @@ A ConfigMap allows you to decouple environment-specific configuration from your 
 
 ---
 
-## Steps
+## Creating and Referencing a ConfigMap Demo
 
 Step 1:
 Display the contents of config-map.yml to see what's inside.
