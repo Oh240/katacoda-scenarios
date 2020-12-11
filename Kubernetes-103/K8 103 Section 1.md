@@ -22,7 +22,7 @@ There are several different types of services in Kubernetes. The default one, an
 Step 1: 
 First, let's create a deployment of nginx, it’s called deploy.yml. Select deploy.yml to run the script. 
 
-Next, we need to apply the deployment deploy.yml to the cluster. Select the below command. 
+Next, we need to apply deploy.yml to the cluster. Select the command below. 
 
 `kubectl apply -f deploy.yml
 `{{execute}}
