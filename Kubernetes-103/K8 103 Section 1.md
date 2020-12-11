@@ -40,15 +40,13 @@ Then, apply the service to the cluster. Select the below command.
 After running the above command, “service/hello-service-a123456 created” will be displayed. 
 
 Step 3:
-To check whether the service exists, you can run the below command:
+To list all services, thus checking whether our service exists, you can run the below command:
 
 `kubectl get services
 `{{execute}}
 
----
-
 Step 4:
-
+Lastly, run the below command which will list all services, deployments and pods with the label 'a123456'. 
 `kubectl get svc,deploy,po -l user=a123456
 `{{execute}}
 
