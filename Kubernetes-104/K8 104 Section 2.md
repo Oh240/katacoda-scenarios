@@ -21,26 +21,27 @@ A ConfigMap allows you to decouple environment-specific configuration from your 
 
 ## Steps
 
+Step 1:
 Display the contents of config-map.yml to see what's inside.
 
 `cat config-map.yml
 `{{execute}}
 
+Step 2:
 Deploy ConfigMap.
 
 `kubectl apply -f config-map.yml
 `{{execute}}
 
+Step 3:
 Now deploy the below yml file, this will reference the configmap in your deployment and deploy the service.
 
 `kubectl apply -f configmap-dep2.yml
 `{{execute}}
 
----
-
+Step 4:
 Test connectivity to nginx:
 `kubectl run -n default -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.default.svc.cluster.local"
 `{{execute}}
-
 
 pod "curl-test" deleted
