@@ -10,27 +10,33 @@
 
 ---
 
+## Demo of Applying the YML File
+
 We know since this is a sandboxed environment, the cluster will be "default". If this were a local machine, we would have to ensure we're pointed to the proper cluster before applying the YML file to our Kubernetes cluster with the command below. 
 
+
+Step 1:
 `kubectl config current-context
 `{{execute}}
 
----
 
+Now, we must apply the deployment.yml file
+
+Step 2:
 `kubectl apply -f deployment.yml
 `{{execute}}
 
 deployment.apps/a123456-deployment created
 
-To check that the deployment is there, run the command below to list all the deployments within your Kubernetes cluster and check for the existence of your username. You should see something similar to what is shown below.
+To ensure that the deployment was created, run the command below.
 
-
+Step 3:
 `kubectl get deployments
 `{{execute}}
 
-
 Let's now check the status of the deployment with the command below. 
 
+Step 4:
 `kubectl get all -l user=a123456
 `{{execute}}
 
@@ -41,7 +47,9 @@ Notice that there is something called a ReplicaSet. Under the hood, a Deployment
 
 Find your output! Use kubectl logs and then the name of your pod to see the output.
 
+---
 
+Step 5:
 `kubectl -n default logs deployment/a123456-deployment --tail=10
 `{{execute}}
 
@@ -49,12 +57,12 @@ Find your output! Use kubectl logs and then the name of your pod to see the outp
 
 Congrats! Your first Kubernetes Pod is live!
 
-kubectl logs is a command that views the stdout and stderr from Pods.
+kubectl logs is a command that views the stdout (standard output) and stderr (standard error - outputs error messages or diagnostics) from Pods.
 
 Now let's delete a single pod and see what happens.
 
----
 
+Step 6:
 `kubectl delete pod $(kubectl get pod --selector="user"="a123456" -o jsonpath={.items[0]..metadata.name})
 `{{execute}}
 
@@ -64,13 +72,18 @@ pod "a123456-deployment-xxxx-xxxx" deleted
 
 Notice that the pod name is different from the one before, this means that Kubernetes deployed a new pod when the pod gets deleted.
 
-Now let's see everything created under the user "a123456". 
+---
 
+Now let's see everything created under the label "a123456". 
+
+Step 7:
 `kubectl get all -l user=a123456
 `{{execute}}
 
-Now let's try deleting the deployment.
+Now let's try deleting the deployment (allow up to 5 minutes). 
 
+
+Step 8:
 `kubectl delete deploy -l user=a123456
 `{{execute}}
 
@@ -78,13 +91,16 @@ deployment.apps "a123456-deployment" deleted
 And check what is happening to the Pods
 
 
+Step 9:
 `kubectl get all -l user=a123456
 `{{execute}}
 
-Run the command again and see what happens. After a few moments, all Pods tied to the Deployment will be deleted.
-
 ---
 
+Lastly, run the command again and see what happens. After a few moments (allow up to 5 minutes), all Pods tied to the Deployment will be deleted.
+
+
+Step 10: 
 `kubectl get all -l user=a123456
 `{{execute}}
 
