@@ -10,6 +10,16 @@
 
 ---
 
+Secrets.
+
+
+Display the contents of deploy3.yml.
+
+`cat deploy3.yml
+`{{execute}}
+
+
+
 The deploy3.yml file contains tomcat deployment information and the secrets from secret.yml. 
 
 Now, apply the Deployment and the Service:
