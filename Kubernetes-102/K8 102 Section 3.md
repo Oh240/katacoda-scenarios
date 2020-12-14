@@ -27,7 +27,7 @@ That means that if you manually delete a Pod that is tied to a Deployment, Kuber
 To create your own namespace (for example, sandbox), select the commands below, if not, skip this step:
 
 
-In this example, we are going to deploy in the default namespace. Namespaces are a Kubernetes logical construct used for separating Objects. If you are deploying this on a local cluster, you can create a sandbox namespace using the command kubectl create ns sandbox. 
+In this example, we are going to deploy in the default namespace. Namespaces are a Kubernetes logical construct used for separating Objects. You will have to specify the namespace via "kubectl get deployments -n [namespace]
 
 Step 1:
 `kubectl create ns sandbox
