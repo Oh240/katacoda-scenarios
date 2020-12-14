@@ -10,7 +10,7 @@
 
 ---
 
-## Demo of Applying the YML File
+## Setting Context
 
 We know since this is a sandboxed environment, the cluster will be "default". If this were a local machine, we would have to ensure we're pointed to the proper cluster before applying the YML file to our Kubernetes cluster with the command below. 
 
@@ -19,6 +19,8 @@ Step 1:
 `kubectl config current-context
 `{{execute}}
 
+
+## Pushing a Deployment 
 
 Now, we must apply the deployment.yml file
 
@@ -47,6 +49,9 @@ Notice that there is something called a ReplicaSet. Under the hood, a Deployment
 
 Find your output! Use kubectl logs and then the name of your pod to see the output.
 
+![](./assets/K8-Deployments.png)
+
+
 ---
 
 Step 5:
@@ -74,7 +79,7 @@ Notice that the pod name is different from the one before, this means that Kuber
 
 ---
 
-Now let's see everything created under the label "a123456". 
+Now let's see everything created under the label "user=a123456". 
 
 Step 7:
 `kubectl get all -l user=a123456
