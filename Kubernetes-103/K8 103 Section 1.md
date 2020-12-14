@@ -10,7 +10,7 @@
 
 ---
 
-## Demo for Kubernetes Services 
+## Pushing a Deployment and a Service
 
 In order for the Pods within Kubernetes to communicate with each other, they must be bound to a Service. The beauty of Services in Kubernetes is that as Pods die and are redeployed, the Service that the application is bound to will route the traffic to the appropriate Pods as they become available. There is no need to manually go in and tell Kubernetes which Pods to route traffic to.
 
@@ -31,6 +31,8 @@ Next, we need to apply deploy.yml to the cluster. Select the command below.
 After running the above command, “deployment.extensions/hello-web-a123456 created” will be displayed. 
 ---
 
+# Validating a Service
+
 Step 2: 
 Then, apply the service to the cluster. Select the below command. 
 
@@ -46,7 +48,7 @@ To list all services, thus checking whether our service exists, you can run the 
 `{{execute}}
 
 Step 4:
-Lastly, run the below command which will list all services, deployments and pods with the label 'a123456'. 
+Lastly, run the below command which will list all services, deployments and pods with the label 'user=a123456'. 
 `kubectl get svc,deploy,po -l user=a123456
 `{{execute}}
 
