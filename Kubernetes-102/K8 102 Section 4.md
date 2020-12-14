@@ -42,6 +42,9 @@ Step 4:
 `kubectl get all -l user=a123456
 `{{execute}}
 
+
+Please Note: In our example we're going to use user=a123456, but in your use case, you'd use whatever is appropriate.
+
 ---
 
 Notice that there is something called a ReplicaSet. Under the hood, a Deployment actually creates a ReplicaSet, which is responsible for maintaining the number of replicas for the Pod that you specified in your Deployment.
@@ -65,6 +68,8 @@ Congrats! Your first Kubernetes Pod is live!
 kubectl logs is a command that views the stdout (standard output) and stderr (standard error - outputs error messages or diagnostics) from Pods.
 
 Now let's delete a single pod and see what happens.
+
+Pod deletion takes time, so please allow up to 5 minutes. 
 
 
 Step 6:
