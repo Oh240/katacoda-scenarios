@@ -14,9 +14,6 @@
 Now that we have a web server running and a service bound to it, we are able to access it from within the Kubernetes cluster. We can test this by deploying a new Pod in the cluster, shelling into it, and then curling the IP or DNS entry for the service.
 
 
-![](./assets/K8-Deployments.png)
-
-
 Deploy the Pod and curl the Service from within the Pod:
 
 Step 1: 
