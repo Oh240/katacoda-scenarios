@@ -21,6 +21,8 @@ Step 1:
 `kubectl run -n default -i --rm --restart=Never curl-test --generator=run-pod/v1 --image=radial/busyboxplus:curl -- sh -c "curl -vvv hello-service-a123456.default.svc.cluster.local"
 `{{execute}}
 
+The html page with the title "Welcome to nginx!" should be displayed. 
+
 ---
 
 ## Command Explanation of Deploying the Pod and Curling the Service from Within the Pod
