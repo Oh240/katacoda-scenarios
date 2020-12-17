@@ -24,7 +24,22 @@ This command allows you to edit your config-map.yml file.
 `vim config-map.yml
 `{{execute}}
 
-Edit the file with by pressing "i", then arrow-down to the index.html section, and edit the text inside the h1 tags. Once finished, click the escape key, followed by the colon key, then press "wq" and the enter key to save the file. 
+Edit the file with the command below. 
+
+`i
+`{{execute no-newline}}
+
+Then arrow-down to the index.html section, and edit the text inside the h1 tags. 
+
+Once finished, select the below command. 
+`^ESC
+`{{execute ctrl-seq}}
+
+
+Now save and exit. 
+`:wq!
+`{{execute}}
+
 
 Step 2:
 Now, apply the config-map.yml file using the below command. 
