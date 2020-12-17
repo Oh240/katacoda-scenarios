@@ -27,18 +27,26 @@ The html page with the title "Welcome to nginx!" should be displayed.
 
 ## Command Explanation of Deploying the Pod and Curling the Service from Within the Pod
 
--i : interactive, keep STDIN (standard input) open even if not attached
---rm : delete resources created in this command for attached containers
+-i : interactive, keeps STDIN (standard input) open even if not attached
+
+--rm : deletes resources created in this command for attached containers
+
 --restart=Never : creates a Pod by default if generator flag was not specified
 
-curl-test : name of new Pod
---generator=run-pod/v1 : generate resources based on a set of inputs and is used to pin a particular behavior which may change in the future
---image=radial/busyboxplus:curl : this curl image was created as an alternate for those only needing to use curl to extract their configuration in their Hub containers.
--- sh : shelling into the new Pod
--c "curl -vvv hello-service-a123456": -c means to run the command that is within the "" in the Pod.
--vvv: very verbose output
 
-We can also access our nginx deployment by using kubectl port-forward. It is worth noting that kubectl port-forward does not require a service as you can bind a Pod's port directly to localhost. kubectl port-forward should only be used for development and testing and is not practical for production deployments. There are other Types of Kubernetes services that are better suited for production.
+
+curl-test : name of new Pod
+
+--generator=run-pod/v1 : generate resources based on a set of inputs and is used to pin a particular behavior which may change in the future
+
+--image=radial/busyboxplus:curl : this curl image was created as an alternate for those only needing to use curl to extract their configuration in their Hub containers.
+
+-- sh : shelling into the new Pod
+
+-c "curl -vvv hello-service-a123456": -c means to run the command that is within the "" in the Pod.
+
+-vvv: very verbose output, displays extra information
+
 
 ---
 
