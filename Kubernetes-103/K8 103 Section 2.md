@@ -60,7 +60,7 @@ Step 3:
 Once finished, stop the port forward 
 
 `^C
-`{{execute}}
+`{{execute ctrl-seq}}
 
 
 Lastly, remove the service and the deployment with the below command:
