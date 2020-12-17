@@ -23,18 +23,32 @@ A Secret is an object that contains a small amount of sensitive data such as a p
 ## Encoding Secrets
 
 
+Step 1:
+Display the contents of secret.yml. 
+`cat secret.yml
+`{{execute}}
+
+Step 2:
+Ecnode the username:
+`echo -n 'admin' | base64
+`{{execute}}
+
+Step 3:
+Encode the password:
+`echo -n 'password' | base64
+`{{execute}}
+
+Step 4:
+Apply the Secrets:
+`kubectl apply -f secret.yml
+`{{execute}}
+
 
 ## Decoding Secrets
 
 In this scenario, we're going to be decoding the username and password of the secret.yml file. 
 
 By default, Kubernetes requires data stored in Secrets to be base64 encoded. The base64 command encodes and decodes data, which is what we're going to be using it for in this scenario.  
-
-Step 1:
-Display the contents of secret.yml. 
-`cat secret.yml
-`{{execute}}
-
 Step 2:
 Decode the username:
 `echo -n 'YWRtaW4=' | base64 -d
@@ -43,9 +57,4 @@ Decode the username:
 Step 3:
 Decode the password:
 `echo -n 'cGFzc3dvcmQ=' | base64 -d
-`{{execute}}
-
-Step 4:
-Apply the Secrets:
-`kubectl apply -f secret.yml
 `{{execute}}
