@@ -13,3 +13,8 @@ The traditional way of hosting applications and services is on a virtual machine
 
 >>Q1: List the two types of overhead necessary for hosting applications on virtual machines.<< 
 =~= resource and maintenance overhead
+
+>>Q1: The type of overhead that utilizes an entire operating system, packages, and dependencies is...<< 
+=~= resource overhead
+
+
