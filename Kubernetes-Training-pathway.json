@@ -1,82 +1,38 @@
 {
-    "title": "Katacoda Environments",
-    "description": "Available Katacoda Environments",
+    "title": "Kubernetes Introductory Training",
+    "description": "Kubernetes Training for Beginners",
     "icon": "fa-kubernetes",
     "courses": [
       {
-        "course_id": "ubuntu-1804",
-        "title": "Ubuntu 18.04 Instance",
-        "description": "General purpose environment"
+        "course_id": "Kubernetes-101",
+        "title": "Kubernetes-101 Quiz",
+        "description": "Kubernetes Components"
       },
       {
-        "course_id": "ubuntu-2004",
-        "title": "Ubuntu 20.04 Instance",
-        "description": "General purpose environment"
+        "course_id": "Kubernetes-102",
+        "title": "Kubernetes 102: Creating and Applying the YML file",
+        "description": "Creating and Applying the YML file"
       },
       {
-        "course_id": "kubernetes-cluster",
-        "title": "Kubernetes Cluster",
-        "description": "Multi node Kubernetes cluster configured using Kubeadm"
+        "course_id": "Kubernetes-103",
+        "title": "Kubernetes 103: Kubernetes Services",
+        "description": "Kubernetes Services"
       },
       {
-        "course_id": "kubernetes-cluster-running",
-        "title": "Kubernetes Cluster Running",
-        "description": "Multi node Kubernetes cluster configured using Kubeadm"
+        "course_id": "Kubernetes-104",
+        "title": "Kubernetes-104: Creating, Referencing, and Editing a ConfigMap",
+        "description": "Creating, Referencing, and Editing a ConfigMap "
       },
       {
-        "course_id": "minikube",
-        "title": "Minikube",
-        "description": "Use Minikube to help explain Kubernetes"
+        "course_id": "Kubernetes-105",
+        "title": "Kubernetes 105: Creating and Referencing Secrets",
+        "description": "Creating and Referencing Secrets"
       },
       {
-        "course_id": "java",
-        "title": "Java / Scala",
-        "description": ""
-      },
-      {
-        "course_id": "kotlin",
-        "title": "Kotlin",
-        "description": ""
-      },
-      {
-        "course_id": "python",
-        "title": "Python 3",
-        "description": ""
-      },
-      {
-        "course_id": "nodejs",
-        "title": "Node.js",
-        "description": ""
-      },
-      {
-        "course_id": "go",
-        "title": "go",
-        "description": ""
-      },
-      {
-        "course_id": "rust",
-        "title": "rust",
-        "description": ""
-      },
-      {
-        "course_id": "ruby",
-        "title": "ruby",
-        "description": ""
-      },
-      {
-        "course_id": "dotnet",
-        "title": "C# / Dotnet",
-        "description": ""
-      },
-      {
-        "course_id": "r",
-        "title": "R",
-        "description": ""
-      },
-      {
-        "course_id": "bash",
-        "title": "Bash",
-        "description": ""
+        "course_id": "Kubernetes-201",
+        "title": "Kubernetes-201 Quiz",
+        "description": "Intro to Containers, Docker and Kurbernetes Quiz"
+      }
       }
     ]
   }
