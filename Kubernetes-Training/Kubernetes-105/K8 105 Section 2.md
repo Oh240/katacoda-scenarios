@@ -41,20 +41,11 @@ Encode the password:
 `echo -n 'password' | base64
 `{{execute}}
 
+
+Notice how the username and password match the output.  
+
+
 Step 4:
 Apply the Secrets:
 `kubectl apply -f secret.yml
-`{{execute}}
-
-
-## Decoding Secrets
-
-Step 1:
-Decode the username:
-`echo -n 'YWRtaW4=' | base64 -d
-`{{execute}}
-
-Step 2:
-Decode the password:
-`echo -n 'cGFzc3dvcmQ=' | base64 -d
 `{{execute}}
